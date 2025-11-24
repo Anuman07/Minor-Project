@@ -99,7 +99,7 @@ def save_users(users):
 @st.cache_data
 def load_data():
     """Load preprocessed data from pickle files"""
-    data_dir = Path("data")
+    data_dir = Path("Data")
     channels_df = pd.read_pickle(data_dir / "channels_df.pkl")
     videos_df = pd.read_pickle(data_dir / "videos_df.pkl")
     return channels_df, videos_df
