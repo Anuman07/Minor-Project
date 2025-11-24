@@ -107,7 +107,7 @@ def load_data():
 @st.cache_resource
 def load_models():
     """Load trained models"""
-    models_dir = Path("models")
+    models_dir = Path("Models")
     models = {
         'rf_video': joblib.load(models_dir / "rf_video.joblib"),
         'rf_channel': joblib.load(models_dir / "rf_channel.joblib"),
